@@ -1,0 +1,103 @@
+[
+  {
+    "question": "Qual comando SQL é usado para recuperar dados de um banco de dados?",
+    "options": ["UPDATE", "INSERT", "SELECT", "DELETE"],
+    "answer": "SELECT"
+  },
+  {
+    "question": "Qual cláusula é usada para filtrar registros que atendem a uma condição especificada?",
+    "options": ["GROUP BY", "ORDER BY", "WHERE", "HAVING"],
+    "answer": "WHERE"
+  },
+  {
+    "question": "Qual comando SQL é usado para adicionar novas linhas a uma tabela?",
+    "options": ["ADD ROW", "INSERT INTO", "NEW RECORD", "UPDATE"],
+    "answer": "INSERT INTO"
+  },
+  {
+    "question": "Qual comando SQL é usado para modificar dados existentes em uma tabela?",
+    "options": ["MODIFY", "CHANGE", "UPDATE", "ALTER"],
+    "answer": "UPDATE"
+  },
+  {
+    "question": "Qual comando SQL é usado para excluir dados de um banco de dados?",
+    "options": ["REMOVE", "ERASE", "DELETE FROM", "DROP"],
+    "answer": "DELETE FROM"
+  },
+  {
+    "question": "Qual comando SQL é usado para criar uma nova tabela em um banco de dados?",
+    "options": ["ADD TABLE", "BUILD TABLE", "CREATE TABLE", "MAKE TABLE"],
+    "answer": "CREATE TABLE"
+  },
+  {
+    "question": "Qual comando SQL é usado para remover uma tabela existente de um banco de dados?",
+    "options": ["REMOVE TABLE", "DELETE TABLE", "DROP TABLE", "ERASE TABLE"],
+    "answer": "DROP TABLE"
+  },
+  {
+    "question": "Qual cláusula é usada para classificar o conjunto de resultados de uma consulta?",
+    "options": ["SORT BY", "ARRANGE BY", "ORDER BY", "GROUP BY"],
+    "answer": "ORDER BY"
+  },
+  {
+    "question": "Qual palavra-chave é usada para retornar apenas valores distintos?",
+    "options": ["UNIQUE", "DIFFERENT", "DISTINCT", "SINGLE"],
+    "answer": "DISTINCT"
+  },
+  {
+    "question": "Qual operador é usado para pesquisar um padrão especificado em uma coluna?",
+    "options": ["MATCH", "FIND", "LIKE", "SEARCH"],
+    "answer": "LIKE"
+  },
+  {
+    "question": "Qual função agregada retorna o número de linhas que correspondem a um critério especificado?",
+    "options": ["SUM()", "AVG()", "COUNT()", "MAX()"],
+    "answer": "COUNT()"
+  },
+  {
+    "question": "Qual função agregada retorna o valor médio de uma coluna numérica?",
+    "options": ["TOTAL()", "AVERAGE()", "AVG()", "MEAN()"],
+    "answer": "AVG()"
+  },
+  {
+    "question": "Qual função agregada retorna o valor total de uma coluna numérica?",
+    "options": ["ADD()", "SUM()", "TOTAL()", "CALCULATE()"],
+    "answer": "SUM()"
+  },
+  {
+    "question": "Qual função agregada retorna o maior valor de uma coluna selecionada?",
+    "options": ["TOP()", "HIGH()", "MAX()", "GREATEST()"],
+    "answer": "MAX()"
+  },
+  {
+    "question": "Qual função agregada retorna o menor valor de uma coluna selecionada?",
+    "options": ["BOTTOM()", "LOW()", "MIN()", "SMALLEST()"],
+    "answer": "MIN()"
+  },
+  {
+    "question": "Qual comando SQL é usado para adicionar, excluir ou modificar colunas em uma tabela existente?",
+    "options": ["CHANGE TABLE", "MODIFY TABLE", "ALTER TABLE", "UPDATE TABLE"],
+    "answer": "ALTER TABLE"
+  },
+  {
+    "question": "Qual cláusula é usada para agrupar linhas que têm os mesmos valores em colunas de resumo?",
+    "options": ["ORDER BY", "SORT BY", "GROUP BY", "ARRANGE BY"],
+    "answer": "GROUP BY"
+  },
+  {
+    "question": "Qual cláusula é usada com GROUP BY para filtrar grupos com base em uma condição?",
+    "options": ["WHERE", "FILTER", "HAVING", "CONDITION"],
+    "answer": "HAVING"
+  },
+  {
+    "question": "Qual tipo de JOIN retorna apenas as linhas que têm valores correspondentes em ambas as tabelas?",
+    "options": ["LEFT JOIN", "RIGHT JOIN", "FULL JOIN", "INNER JOIN"],
+    "answer": "INNER JOIN"
+  },
+  {
+    "question": "Qual tipo de JOIN retorna todas as linhas da tabela esquerda e as linhas correspondentes da tabela direita?",
+    "options": ["RIGHT JOIN", "INNER JOIN", "LEFT JOIN", "FULL JOIN"],
+    "answer": "LEFT JOIN"
+  }
+]
+

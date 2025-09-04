@@ -1,0 +1,103 @@
+[
+  {
+    "question": "Qual é a diferença entre DELETE e TRUNCATE em SQL?",
+    "options": ["DELETE é DDL, TRUNCATE é DML", "DELETE é mais rápido, TRUNCATE é mais lento", "DELETE pode ser revertido, TRUNCATE não", "DELETE remove a tabela, TRUNCATE remove os dados"],
+    "answer": "DELETE pode ser revertido, TRUNCATE não"
+  },
+  {
+    "question": "O que é uma subconsulta em SQL?",
+    "options": ["Uma consulta dentro de outra consulta", "Uma consulta que retorna múltiplos resultados", "Uma consulta que modifica dados", "Uma consulta que cria uma nova tabela"],
+    "answer": "Uma consulta dentro de outra consulta"
+  },
+  {
+    "question": "Qual é a finalidade da cláusula `HAVING`?",
+    "options": ["Filtrar linhas antes do agrupamento", "Filtrar grupos após o agrupamento", "Ordenar os resultados da consulta", "Unir tabelas"],
+    "answer": "Filtrar grupos após o agrupamento"
+  },
+  {
+    "question": "O que é um `JOIN` em SQL?",
+    "options": ["Uma operação para combinar linhas de duas ou mais tabelas", "Uma função para calcular a soma de uma coluna", "Um comando para excluir dados", "Um tipo de índice"],
+    "answer": "Uma operação para combinar linhas de duas ou mais tabelas"
+  },
+  {
+    "question": "Qual tipo de `JOIN` retorna todas as linhas de ambas as tabelas, preenchendo com NULL onde não há correspondência?",
+    "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN"],
+    "answer": "FULL OUTER JOIN"
+  },
+  {
+    "question": "O que é um índice em um banco de dados?",
+    "options": ["Uma restrição de chave primária", "Uma estrutura de dados que melhora a velocidade das operações de recuperação de dados", "Um tipo de dado", "Um comando para criar tabelas"],
+    "answer": "Uma estrutura de dados que melhora a velocidade das operações de recuperação de dados"
+  },
+  {
+    "question": "Qual é a diferença entre `UNION` e `UNION ALL`?",
+    "options": ["UNION remove duplicatas, UNION ALL não", "UNION é mais rápido, UNION ALL é mais lento", "UNION exige o mesmo número de colunas, UNION ALL não", "UNION combina linhas, UNION ALL combina colunas"],
+    "answer": "UNION remove duplicatas, UNION ALL não"
+  },
+  {
+    "question": "O que é uma `VIEW` em SQL?",
+    "options": ["Uma tabela temporária", "Uma tabela virtual baseada no conjunto de resultados de uma instrução SQL", "Um tipo de índice", "Uma função agregada"],
+    "answer": "Uma tabela virtual baseada no conjunto de resultados de uma instrução SQL"
+  },
+  {
+    "question": "Qual é a finalidade de `GROUP BY`?",
+    "options": ["Ordenar os resultados da consulta", "Filtrar linhas", "Agrupar linhas que têm os mesmos valores em colunas especificadas em um conjunto de linhas de resumo", "Unir tabelas"],
+    "answer": "Agrupar linhas que têm os mesmos valores em colunas especificadas em um conjunto de linhas de resumo"
+  },
+  {
+    "question": "O que é uma `TRIGGER` em SQL?",
+    "options": ["Um procedimento armazenado que é executado automaticamente em resposta a um evento em uma tabela", "Uma função para calcular valores", "Um tipo de restrição", "Um comando para criar índices"],
+    "answer": "Um procedimento armazenado que é executado automaticamente em resposta a um evento em uma tabela"
+  },
+  {
+    "question": "Qual comando é usado para conceder permissões a usuários em um banco de dados?",
+    "options": ["REVOKE", "GRANT", "DENY", "ALLOW"],
+    "answer": "GRANT"
+  },
+  {
+    "question": "Qual comando é usado para remover permissões de usuários em um banco de dados?",
+    "options": ["GRANT", "REVOKE", "DELETE", "DROP"],
+    "answer": "REVOKE"
+  },
+  {
+    "question": "O que é uma `Stored Procedure`?",
+    "options": ["Uma função que retorna um único valor", "Um conjunto de instruções SQL que é armazenado no banco de dados e pode ser executado como uma única unidade lógica", "Um tipo de índice", "Uma restrição de chave estrangeira"],
+    "answer": "Um conjunto de instruções SQL que é armazenado no banco de dados e pode ser executado como uma única unidade lógica"
+  },
+  {
+    "question": "Qual é a diferença entre `PRIMARY KEY` e `UNIQUE KEY`?",
+    "options": ["PRIMARY KEY permite NULLs, UNIQUE KEY não", "PRIMARY KEY pode ter múltiplos campos, UNIQUE KEY não", "PRIMARY KEY identifica unicamente cada registro e não permite NULLs, UNIQUE KEY permite NULLs e pode ter múltiplos campos", "Não há diferença"],
+    "answer": "PRIMARY KEY identifica unicamente cada registro e não permite NULLs, UNIQUE KEY permite NULLs e pode ter múltiplos campos"
+  },
+  {
+    "question": "O que é `Normalization` em bancos de dados?",
+    "options": ["O processo de organizar os dados em um banco de dados para reduzir a redundância e melhorar a integridade dos dados", "Um tipo de indexação", "Um comando para otimizar consultas", "Um método de backup de dados"],
+    "answer": "O processo de organizar os dados em um banco de dados para reduzir a redundância e melhorar a integridade dos dados"
+  },
+  {
+    "question": "Qual é a finalidade da cláusula `ORDER BY`?",
+    "options": ["Filtrar linhas", "Agrupar linhas", "Classificar o conjunto de resultados de uma consulta em ordem crescente ou decrescente", "Unir tabelas"],
+    "answer": "Classificar o conjunto de resultados de uma consulta em ordem crescente ou decrescente"
+  },
+  {
+    "question": "O que é um `Foreign Key`?",
+    "options": ["Uma chave que identifica unicamente cada registro em uma tabela", "Uma chave que liga duas tabelas, referenciando a chave primária de outra tabela", "Um tipo de índice", "Uma restrição de integridade de dados"],
+    "answer": "Uma chave que liga duas tabelas, referenciando a chave primária de outra tabela"
+  },
+  {
+    "question": "Qual comando SQL é usado para alterar a estrutura de uma tabela existente?",
+    "options": ["UPDATE TABLE", "MODIFY TABLE", "ALTER TABLE", "CHANGE TABLE"],
+    "answer": "ALTER TABLE"
+  },
+  {
+    "question": "O que é um `Cursor` em SQL?",
+    "options": ["Um ponteiro para uma linha específica em um conjunto de resultados de uma consulta", "Um tipo de índice", "Uma função agregada", "Um comando para criar tabelas"],
+    "answer": "Um ponteiro para uma linha específica em um conjunto de resultados de uma consulta"
+  },
+  {
+    "question": "Qual é a diferença entre `WHERE` e `HAVING`?",
+    "options": ["WHERE filtra linhas, HAVING filtra grupos", "WHERE filtra grupos, HAVING filtra linhas", "Não há diferença", "Ambos filtram linhas e grupos"],
+    "answer": "WHERE filtra linhas, HAVING filtra grupos"
+  }
+]
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameEducat - Plataforma de Estudos</title>
+    <link rel="stylesheet" href="game-center.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="url(#gradient1)"/>
+                            <path d="M8 12L16 8L24 12V20L16 24L8 20V12Z" fill="white" opacity="0.9"/>
+                            <defs>
+                                <linearGradient id="gradient1" x1="0" y1="0" x2="32" y2="32">
+                                    <stop stop-color="#667eea"/>
+                                    <stop offset="1" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h1 class="logo-text">GameEducat</h1>
+                </div>
+                <div class="user-profile">
+                    <div class="user-avatar">
+                        <div class="avatar-circle">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 10C12.7614 10 15 7.76142 15 5C15 2.23858 12.7614 0 10 0C7.23858 0 5 2.23858 5 5C5 7.76142 7.23858 10 10 10Z" fill="currentColor"/>
+                                <path d="M10 12.5C4.47715 12.5 0 16.9772 0 22.5H20C20 16.9772 15.5228 12.5 10 12.5Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h2 class="hero-title">Bem-vindo ao GameEducat</h2>
+                    <p class="hero-subtitle">Aprenda de forma divertida com nossos jogos educativos</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Jogos Disponíveis e alguns em desenvolvimento</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Diversão Garantida</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Games Grid -->
+            <section class="games-section">
+                <div class="section-header">
+                    <h3 class="section-title">Jogos Populares</h3>
+                    <div class="section-subtitle">Escolha um jogo e comece a aprender</div>
+                </div>
+                
+                <div class="games-grid" id="games-grid">
+                    <!-- Games will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <!-- Recent Activity -->
+            <section class="activity-section">
+                <div class="section-header">
+                    <h3 class="section-title">Atividade Recente</h3>
+                </div>
+                
+                <div class="activity-feed" id="activity-feed">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 0L10.472 5.056L16 5.528L11.764 9.472L12.944 15L8 12.528L3.056 15L4.236 9.472L0 5.528L5.528 5.056L8 0Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-text">Você completou o <strong>SQL Quest</strong></div>
+                            <div class="activity-time">há 2 horas</div>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 0L10.472 5.056L16 5.528L11.764 9.472L12.944 15L8 12.528L3.056 15L4.236 9.472L0 5.528L5.528 5.056L8 0Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-text">Novo recorde pessoal no <strong>Math Challenge</strong></div>
+                            <div class="activity-time">ontem</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+               <p>&copy; 2024 GameEducat - Plataforma de Estudos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Game Modal -->
+    <div id="game-modal" class="modal hidden">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Título do Jogo</h3>
+                <button class="modal-close" id="modal-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="game-preview" id="game-preview">
+                    <div class="preview-icon" id="preview-icon"></div>
+                </div>
+                <div class="game-info">
+                    <p id="modal-description">Descrição do jogo</p>
+                    <div class="game-stats">
+                        <div class="stat">
+                            <span class="stat-label">Dificuldade:</span>
+                            <span id="modal-difficulty">Médio</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Tempo estimado:</span>
+                            <span id="modal-duration">15-30 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="modal-cancel">Cancelar</button>
+                <button class="btn btn-primary" id="modal-play">Jogar Agora</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game-center.js"></script>
+</body>
+</html>
+

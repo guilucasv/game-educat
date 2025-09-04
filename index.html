@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Quest - Jogo Interativo de SQL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Tela inicial -->
+    <div id="start-screen" class="screen active">
+        <div class="container">
+            <h1 class="game-title">SQL Quest</h1>
+            <p class="game-subtitle">Aventure-se pelo mundo do SQL e da Lógica</p>
+            <div class="character-preview">
+                <div class="character" id="preview-character">🧙‍♂️</div>
+            </div>
+            <button id="start-btn" class="btn btn-primary">Iniciar Aventura</button>
+            <div class="game-info">
+                <p>Responda perguntas de SQL e Tabela Verdade para avançar!</p>
+                <p>3 níveis de dificuldade • 60 perguntas no total</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela do jogo -->
+    <div id="game-screen" class="screen">
+        <div class="game-header">
+            <div class="progress-container">
+                <div class="level-info">
+                    <span id="current-level">Nível 1</span>
+                    <span id="question-counter">1/20</span>
+                </div>
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+            </div>
+            <div class="score-info">
+                <span id="score">Pontuação: 0</span>
+            </div>
+        </div>
+
+        <div class="game-content">
+            <div class="character-section">
+                <div class="character-container">
+                    <div class="character" id="game-character">🧙‍♂️</div>
+                    <div class="character-path">
+                        <div class="path-segment" data-level="1"></div>
+                        <div class="path-segment" data-level="2"></div>
+                        <div class="path-segment" data-level="3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-section">
+                <div class="question-container">
+                    <h2 id="question-text" class="question-text">Carregando pergunta...</h2>
+                    <div id="options-container" class="options-container">
+                        <!-- Opções serão inseridas dinamicamente -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback de resposta -->
+        <div id="feedback" class="feedback hidden">
+            <div class="feedback-content">
+                <div id="feedback-icon" class="feedback-icon"></div>
+                <div id="feedback-message" class="feedback-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de fim de jogo -->
+    <div id="end-screen" class="screen">
+        <div class="container">
+            <h1 class="end-title">Parabéns!</h1>
+            <div class="character-celebration">
+                <div class="character" id="end-character">🧙‍♂️</div>
+            </div>
+            <div class="final-stats">
+                <h2>Sua Jornada foi Concluída!</h2>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-label">Pontuação Final:</span>
+                        <span id="final-score" class="stat-value">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Acertos:</span>
+                        <span id="final-correct" class="stat-value">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Precisão:</span>
+                        <span id="final-accuracy" class="stat-value">0%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="end-actions">
+                <button id="restart-btn" class="btn btn-primary">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Canvas para confetes -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Mensagens positivas -->
+    <div id="positive-messages" class="positive-messages hidden">
+        <div class="message-content">
+            <span id="message-text"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

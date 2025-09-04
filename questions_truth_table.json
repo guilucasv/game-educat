@@ -1,0 +1,103 @@
+[
+  {
+    "question": "Qual é o resultado de (VERDADEIRO AND FALSO)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "FALSO"
+  },
+  {
+    "question": "Qual é o resultado de (VERDADEIRO OR FALSO)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "VERDADEIRO"
+  },
+  {
+    "question": "Qual é o resultado de (NOT VERDADEIRO)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "FALSO"
+  },
+  {
+    "question": "Se P é VERDADEIRO e Q é FALSO, qual é o resultado de (P AND Q)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "FALSO"
+  },
+  {
+    "question": "Se P é FALSO e Q é VERDADEIRO, qual é o resultado de (P OR Q)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "VERDADEIRO"
+  },
+  {
+    "question": "Qual é o resultado de (FALSO AND FALSO)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "FALSO"
+  },
+  {
+    "question": "Qual é o resultado de (FALSO OR FALSO)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "FALSO"
+  },
+  {
+    "question": "Qual é o resultado de (NOT FALSO)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "VERDADEIRO"
+  },
+  {
+    "question": "Se P é VERDADEIRO e Q é VERDADEIRO, qual é o resultado de (P AND Q)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "VERDADEIRO"
+  },
+  {
+    "question": "Se P é FALSO e Q é FALSO, qual é o resultado de (P OR Q)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "FALSO"
+  },
+  {
+    "question": "Qual é o resultado de (VERDADEIRO XOR FALSO)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "VERDADEIRO"
+  },
+  {
+    "question": "Qual é o resultado de (VERDADEIRO XOR VERDADEIRO)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "FALSO"
+  },
+  {
+    "question": "Se P é VERDADEIRO e Q é FALSO, qual é o resultado de (P OR NOT Q)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "VERDADEIRO"
+  },
+  {
+    "question": "Se P é FALSO e Q é VERDADEIRO, qual é o resultado de (NOT P AND Q)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "VERDADEIRO"
+  },
+  {
+    "question": "Qual é o resultado de (VERDADEIRO AND (FALSO OR VERDADEIRO))?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "VERDADEIRO"
+  },
+  {
+    "question": "Qual é o resultado de (FALSO OR (VERDADEIRO AND FALSO))?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "FALSO"
+  },
+  {
+    "question": "Se P é VERDADEIRO, qual é o resultado de (P AND NOT P)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "FALSO"
+  },
+  {
+    "question": "Se P é FALSO, qual é o resultado de (P OR NOT P)?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "VERDADEIRO"
+  },
+  {
+    "question": "Qual é o resultado de (NOT (VERDADEIRO AND FALSO))?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "VERDADEIRO"
+  },
+  {
+    "question": "Qual é o resultado de (NOT (FALSO OR VERDADEIRO))?",
+    "options": ["VERDADEIRO", "FALSO"],
+    "answer": "FALSO"
+  }
+]
+

@@ -68,7 +68,7 @@ const gamesData = [
         difficulty: 3,
         duration: '20-35 min',
         status: 'Disponível',
-        link: 'https://gamebiology.netlify.app/',
+        link: 'https://gamebiologia.netlify.app/',
         gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
         subjects: ['Biologia', 'Sistema Digestório', 'Sistema Respiratório', 'Ciências da Natureza']
     }

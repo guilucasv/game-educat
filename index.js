@@ -10,7 +10,7 @@ const gamesData = [
         status: 'Disponível',
         link: 'https://quizgamesql.netlify.app/',
         gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        subjects: ['SQL', 'Tabela Verdade', 'Lógica']
+        subjects: ['SQL', 'Tabela Verdade', 'Lógica', 'Programação']
     },
     {
         id: 'desafio-er-sql',
@@ -22,7 +22,7 @@ const gamesData = [
         status: 'Disponível',
         link: 'https://testes2025.netlify.app/sql/02/',
         gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-        subjects: ['SQL', 'Modelagem de Dados', 'ER']
+        subjects: ['SQL', 'Modelagem de Dados', 'ER', 'Programação']
     },
     {
         id: 'plataforma-sql',
@@ -34,7 +34,7 @@ const gamesData = [
         status: 'Disponível',
         link: 'https://68a55f7099505d8d7817e8cc--aquamarine-valkyrie-61ba6f.netlify.app/menuj',
         gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-        subjects: ['SQL', 'Banco de Dados', 'Consultas']
+        subjects: ['SQL', 'Banco de Dados', 'Consultas', 'Programação']
     },
     {
         id: 'math-challenge',
@@ -46,7 +46,7 @@ const gamesData = [
         status: 'Em Breve',
         link: '#',
         gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-        subjects: ['Álgebra', 'Geometria', 'Cálculo']
+        subjects: ['Matemática']
     },
     {
         id: 'code-master',
@@ -58,12 +58,28 @@ const gamesData = [
         status: 'Em Breve',
         link: '#',
         gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-        subjects: ['Python', 'JavaScript', 'Algoritmos']
+        subjects: ['Python', 'JavaScript', 'Algoritmos', 'Programação']
+    },
+    {
+        id: 'jornada-corpo-humano',
+        title: 'Jornada pelo Corpo Humano',
+        description: 'Explore os sistemas digestório e respiratório de forma interativa. Aprenda sobre órgãos, funções e curiosidades do corpo humano.',
+        icon: '🧬',
+        difficulty: 3,
+        duration: '20-35 min',
+        status: 'Disponível',
+        link: 'https://gamebiology.netlify.app/',
+        gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        subjects: ['Biologia', 'Sistema Digestório', 'Sistema Respiratório', 'Ciências da Natureza']
     }
 ];
 
 // Elementos DOM
-const gamesGrid = document.getElementById('games-grid');
+const gamesGridProgramacao = document.getElementById('games-grid-programacao');
+const gamesGridNatureza = document.getElementById('games-grid-natureza');
+const gamesGridHistoria = document.getElementById('games-grid-historia');
+const gamesGridMatematica = document.getElementById('games-grid-matematica');
+const gamesGridFisica = document.getElementById('games-grid-fisica');
 const gameModal = document.getElementById('game-modal');
 const modalOverlay = document.getElementById('modal-overlay');
 const modalClose = document.getElementById('modal-close');
@@ -84,13 +100,27 @@ document.addEventListener('DOMContentLoaded', function() {
     addAnimations();
 });
 
-// Renderizar jogos na grid
+// Renderizar jogos nas grids
 function renderGames() {
-    gamesGrid.innerHTML = '';
+    gamesGridProgramacao.innerHTML = '';
+    gamesGridNatureza.innerHTML = '';
+    gamesGridHistoria.innerHTML = '';
+    gamesGridMatematica.innerHTML = '';
+    gamesGridFisica.innerHTML = '';
     
     gamesData.forEach(game => {
         const gameCard = createGameCard(game);
-        gamesGrid.appendChild(gameCard);
+        if (game.subjects.includes('Programação')) {
+            gamesGridProgramacao.appendChild(gameCard);
+        } else if (game.subjects.includes('Ciências da Natureza')) {
+            gamesGridNatureza.appendChild(gameCard);
+        } else if (game.subjects.includes('História')) {
+            gamesGridHistoria.appendChild(gameCard);
+        } else if (game.subjects.includes('Matemática')) {
+            gamesGridMatematica.appendChild(gameCard);
+        } else if (game.subjects.includes('Física')) {
+            gamesGridFisica.appendChild(gameCard);
+        }
     });
 }
 

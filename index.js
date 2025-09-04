@@ -8,7 +8,7 @@ const gamesData = [
         difficulty: 3,
         duration: '15-30 min',
         status: 'Disponível',
-        link: './index.html',
+        link: 'https://quizgamesql.netlify.app/',
         gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
         subjects: ['SQL', 'Tabela Verdade', 'Lógica']
     },
